@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title> RENT AND RIDE</title>
+    <style>
+        .blog-container{
+    display: grid;
+    gap: 2rem 0;
+}
+
+.blog-container .card{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1rem;
+    background: var(--color-bg);
+    cursor: pointer;
+}
+.blog-container .card-2{
+    grid-template-columns: 60%  40%;
+   
+}
+.blog-container img{
+    filter: grayscale(1);
+    transition: var(--transition);
+}
+
+.blog-container .card:hover img{
+    filter: grayscale(0);
+}
+
+.blog-container .content p{
+    padding: .1rem 1.5rem;
+
+}
+div>p{
+    color: white;
+}
+.works{
+    padding-bottom: 3rem;
+
+}
+.works .title p{
+    padding-top:1rem;
+}
+
+.works-container{
+    text-align: center;
+}
+.works-container .step{
+    width:15% ;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.works-container .number{
+    z-index: 1;
+   
+    height: 50px;
+    width: 50px;
+    border: .2rem solid var(--color-secondary);
+    border-radius: 50%;
+   color: var(--color-secondary);
+   background: var(--color-primary);
+
+   display: block;
+   position: relative;
+   margin: 0 auto 10px auto;
+}
+.works-container .number>span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.3rem;
+    
+}
+
+.works-container .caption{
+    display: block;
+    color: var(--color-secondary);
+}
+.works-container .step::after{
+    content: '';
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    height: 4px;
+     background: var(--color-secondary);
+   z-index: -1;
+
+}
+
+.works-container .step:last-child:after{
+    display: none;
+
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">RENTAL</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="services.html">SERVICE</a></li>
+          <li><a href="cars.html">CARS</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+        <div class="nav__btn">
+          <button class="btn"><a href="index.html">GOBACK</a> </button>
+        </div>
+      </nav>
+      <div class="header__container" id="home">
+        <h1>EcoDrive Rentals</h1>
+        <form action="/">
+          <div class="input__group">
+            <label for="location">Pick up & Return location</label>
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="Dallas, Texas"
+            />
+          </div>
+          <div class="input__group">
+            <label for="start">Start</label>
+            <input
+              type="text"
+              name="start"
+              id="start"
+              placeholder="Aug 16, 10:00 AM"
+            />
+          </div>
+          <div class="input__group">
+            <label for="stop">Stop</label>
+            <input
+              type="text"
+              name="stop"
+              id="stop"
+              placeholder="Aug 18, 10:00 PM"
+            />
+          </div>
+          <button class="btn">
+            <a href="cars.html" target="_blank">
+                Search
+            </a>
+        </button>
+        
+        </form>
+        <img src="assets/header.png" alt="header" />
+      </div>
+      <a href="#about" class="scroll__down">
+        <i class="ri-arrow-down-line"></i>
+      </a>
+    </header>
+
+
+    
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="title">
+          <h4><i class="fa-solid fa-car"></i></h4>
+        </div>
+  
+        <div class="about-container">
+          <div class="image">
+            <img src="./images/about pexels.jpg" alt="" />
+          </div>
+  
+          <div class="content">
+            <div class="title">
+              <p>About us</p>
+              <h2>Welcome to Carvilla</h2>
+            </div>
+            <p>
+              Welcome to Carvilla, your trusted partner in finding the perfect car to suit your needs. At Carvilla, we pride ourselves on offering a diverse range of high-quality vehicles, from the latest models to trusted favorites. Whether you're looking for a family car, a luxury ride, or something eco-friendly, we've got you covered.
+  
+              Our mission is to make car buying or renting an enjoyable and stress-free experience. We provide expert guidance, flexible pricing, and unmatched customer service to ensure you drive away happy. With a focus on innovation, customer satisfaction, and transparency, Carvilla is here to revolutionize the way you approach your next car purchase or rental.
+              
+              Explore our extensive selection, learn about the latest automotive trends, and experience the convenience and reliability that Carvilla is known for.
+            </p>
+            <br />
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </section>
+
+    <section class="section__container story__container">
+      <h2 class="section__header">STORIES BEHIND THE WHEEL</h2>
+      <div class="story__grid">
+        <div class="story__card">
+          <div class="story__date">
+            <span>12</span>
+            <div>
+              <p>January</p>
+              <p>2024</p>
+            </div>
+          </div>
+          <h4>Adventures on the Open Road</h4>
+          <p>
+            Join us as we dive into the exhilarating stories of travelers who
+            embarked on unforgettable journeys with PREMIUM CAR RENTAL.
+          </p>
+          <img src="assets/story-1.jpg" alt="story" />
+        </div>
+        <div class="story__card">
+          <div class="story__date">
+            <span>04</span>
+            <div>
+              <p>March</p>
+              <p>2024</p>
+            </div>
+          </div>
+          <h4>Luxury and Comfort: Experiences</h4>
+          <p>
+            In this series, we highlight the luxurious touches, unparalleled
+            comfort, and exceptional service that make every ride.
+          </p>
+          <img src="assets/story-2.jpg" alt="story" />
+        </div>
+        <div class="story__card">
+          <div class="story__date">
+            <span>18</span>
+            <div>
+              <p>June</p>
+              <p>2024</p>
+            </div>
+          </div>
+          <h4>Cars that Adapt to Your Lifestyle</h4>
+          <p>
+            Read about how our versatile vehicles have seamlessly integrated
+            into the lives of professionals and families alike.
+          </p>
+          <img src="assets/story-3.jpg" alt="story" />
+        </div>
+      </div>
+    </section>
+
+    <section class="banner__container">
+      <div class="banner__wrapper">
+        <img src="assets/banner-1.png" alt="banner" />
+        <img src="assets/banner-2.png" alt="banner" />
+        <img src="assets/banner-3.png" alt="banner" />
+        <img src="assets/banner-4.png" alt="banner" />
+        <img src="assets/banner-5.png" alt="banner" />
+        <img src="assets/banner-6.png" alt="banner" />
+        <img src="assets/banner-7.png" alt="banner" />
+        <img src="assets/banner-8.png" alt="banner" />
+        <img src="assets/banner-9.png" alt="banner" />
+        <img src="assets/banner-10.png" alt="banner" />
+      </div>
+    </section>
+
+    <section class="download">
+      <div class="section__container download__container">
+        <div class="download__content">
+          <h2 class="section__header">PREMIUM CAR RENTAL</h2>
+          <div class="download__links">
+            <a href="#">
+              <img src="assets/apple.png" alt="apple" />
+            </a>
+            <a href="#">
+              <img src="assets/google.png" alt="google" />
+            </a>
+          </div>
+        </div>
+        <div class="download__image">
+          <img src="assets/download.png" alt="download" />
+        </div>
+      </div>
+    </section>
+
+    <section class="news" id="contact">
+      <div class="section__container news__container">
+        <h2 class="section__header">Stay up to date on all the latest news.</h2>
+        <form action="/">
+          <input type="text" placeholder="Your email" />
+          <button class="btn">
+            <i class="ri-send-plane-fill"></i>
+          </button>
+        </form>
+      </div>
+      
+    
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul class="footer__links">
+            <li><a href="#">Installation Manual</a></li>
+            <li><a href="#">Release Note</a></li>
+            <li><a href="#">Community Help</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul class="footer__links">
+            <li><a href="#">Demo</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Features</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__col">
+          <h4>Follow Us</h4>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

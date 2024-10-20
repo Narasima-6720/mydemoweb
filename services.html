@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <title>Services</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.services {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #e9ecef; /* Light background color */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    flex: 1 1 300px; /* Responsive card width */
+    max-width: 300px; /* Limit card width */
+}
+
+.card div {
+    font-size: 2rem; /* Icon size */
+    margin-bottom: 10px;
+    color: #007bff; /* Icon color */
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    color: #333; /* Card title color */
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666; /* Text color */
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title h2 {
+        font-size: 2rem;
+    }
+    .card {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+}
+
+    </style>
+    </head>
+<body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">RENTAL</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about.html">AbOUT</a></li>
+          <li><a href="#service.html">SERVICE</a></li>
+          <li><a href="cars.html">CARS</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+        <div class="nav__btn">
+          <button class="btn"><a href="index.html">GOBACK</a> </button>
+        </div>
+      </nav>
+      <div class="header__container" id="home">
+        <h1>EcoDrive Rentals</h1>
+        <form action="/">
+          <div class="input__group">
+            <label for="location">Pick up & Return location</label>
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="Dallas, Texas"
+            />
+          </div>
+          <div class="input__group">
+            <label for="start">Start</label>
+            <input
+              type="text"
+              name="start"
+              id="start"
+              placeholder="Aug 16, 10:00 AM"
+            />
+          </div>
+          <div class="input__group">
+            <label for="stop">Stop</label>
+            <input
+              type="text"
+              name="stop"
+              id="stop"
+              placeholder="Aug 18, 10:00 PM"
+            />
+          </div>
+          <button class="btn">
+            <a href=""><i class="ri-search-line"></i></a>
+          </button>
+        </form>
+        <img src="assets/header.png" alt="header" />
+      </div>
+      <a href="#about" class="scroll__down">
+        <i class="ri-arrow-down-line"></i>
+      </a>
+    </header>
+
+    <section class="services" id="services">
+        <div class="title">
+       
+         <center><h2>What Services we Offer to our Clients</h2></center> 
+         
+        </div>
+        <div class="container services-container">
+          <div class="card">
+            <div>
+              <span class="lnr lnr-rocket"></span>
+              <h4>Car Accessories</h4>
+            </div>
+            <p>
+              we offer a wide range of car accessories designed to enhance your driving experience and ensure comfort, safety, and convenience
+            </p>
+          </div>
+  
+          <div class="card">
+            <div>
+              <span class="lnr lnr-license"></span>
+              <h4>Technical Repair</h4>
+            </div>
+            <p>
+              Our skilled technicians are equipped to handle a wide range of repairs, from routine maintenance like oil changes and brake inspections to complex engine 
+              diagnostics and electrical system repairs, ensuring your car is in top condition for every journey
+            </p>
+          </div>
+  
+          <div class="card">
+            <div>
+              <span class="lnr lnr-user"></span>
+              <h4>Vast Reservation</h4>
+            </div>
+            <p>
+              our vast reservation system allows customers to easily book their preferred vehicles online, 
+              offering a seamless and user-friendly experience
+            </p>
+          </div>
+          <div class="card">
+            <div>
+              <span class="lnr lnr-phone"></span>
+              <h4>24/7 Support</h4>
+            </div>
+            <p>
+              we pride ourselves on providing exceptional 24/7 support to our customers, ensuring assistance is always just a call or click away. 
+            </p>
+          </div>
+  
+          <div class="card">
+            <div>
+              <span class="lnr lnr-location"></span>
+              <h4>Vast Branches</h4>
+            </div>
+            <p>
+              we have established a vast network of branches strategically located to serve you better. With locations in major cities and popular travel destinations, we make it easy for you to access our services, 
+              whether you're picking up a rental car or returning one
+            </p>
+          </div>
+  
+          <div class="card">
+            <div>
+              <span class="lnr lnr-car"></span>
+              <h4>Rental CARS</h4>
+            </div>
+            <p>
+              we offer a diverse fleet of rental cars to suit every need and budget. From compact and fuel-efficient vehicles for city driving to spacious SUVs and luxury models for special occasions, our selection ensures
+               that you can find the perfect car for your journey. 
+            </p>
+          </div>
+        </div>
+      </section>
+    
+           
+           
+       
+      </section>
+      <section class="banner__container">
+        <div class="banner__wrapper">
+          <img src="assets/banner-1.png" alt="banner" />
+          <img src="assets/banner-2.png" alt="banner" />
+          <img src="assets/banner-3.png" alt="banner" />
+          <img src="assets/banner-4.png" alt="banner" />
+          <img src="assets/banner-5.png" alt="banner" />
+          <img src="assets/banner-6.png" alt="banner" />
+          <img src="assets/banner-7.png" alt="banner" />
+          <img src="assets/banner-8.png" alt="banner" />
+          <img src="assets/banner-9.png" alt="banner" />
+          <img src="assets/banner-10.png" alt="banner" />
+        </div>
+      </section>
+      <footer>
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <h4>Resources</h4>
+            <ul class="footer__links">
+              <li><a href="#">Installation Manual</a></li>
+              <li><a href="#">Release Note</a></li>
+              <li><a href="#">Community Help</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <ul class="footer__links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Product</h4>
+            <ul class="footer__links">
+              <li><a href="#">Demo</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Features</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer__col">
+            <h4>Follow Us</h4>
+            <ul class="footer__socials">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2024 Web Design Mastery. All rights reserved.
+        </div>
+      </footer>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="index.js"></script>
+      
+
+</html>
